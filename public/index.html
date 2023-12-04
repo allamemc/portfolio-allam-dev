@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html data-theme="halloween" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allam Dev | Software Developer</title>
+    <meta
+      name="description"
+      content="Software Developer enjoying the process of learning and creating apps."
+    />
+    <meta property="og:title" content="Allam Dev | Software Developer" />
+    <meta
+      property="og:description"
+      content="Software Developer enjoying the process of learning and creating apps."
+    />
+    <meta property="og:image" content="./images/allam_black.webp" />
+    <meta property="og:url" content="https://allam-dev.vercel.app/" />
+
+    <link rel="canonical" href="https://allam-dev.vercel.app/" />
+    <link rel="icon" href="./images/icono-nofondo.webp" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navigation-bar">
+        <div class="navbar">
+          <div class="justify-end navbar">
+            <button class="btn btn-ghost btn-circle" id="theme" title="Theme">
+              <div class="text-2xl indicator">
+                <ion-icon name="moon" id="theme-icon"></ion-icon>
+              </div>
+            </button>
+            <button class="btn btn-ghost btn-circle" id="lang" title="Language">
+              <div class="text-2xl indicator">
+                <div class="idioma">ES</div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <section class="about-me">
+        <div class="border-solid hero border-base-300 wrapper">
+          <div
+            class="flex self-center justify-start w-full gap-8 max-sm:flex-col"
+          >
+            <div class="flex self-center justify-center">
+              <div
+                class="border-solid profile-pic black border-base bg-base-300"
+              ></div>
+            </div>
+            <div class="flex flex-col justify-center gap-3">
+              <h1
+                class="text-4xl titulo-nombre max-sm:text-center typing-animation"
+              >
+                Allam EMC
+              </h1>
+              <div class="max-sm:text-center subtitulo">
+                Desarrollador de software que disfruta el proceso de aprendizaje
+                y la creación de aplicaciones.
+              </div>
+              <div class="flex gap-2 max-sm:justify-center">
+                <button
+                  class="self-start text-white bg-green-600 btn btn-sm max-sm:self-center hover:bg-green-900"
+                  title="State"
+                >
+                  Online
+                </button>
+                <a
+                  class="self-start btn btn-sm bg-base-300 max-sm:self-center curriculumn-btn"
+                  title="CV"
+                  href="./images/CV_ALLAM_MIRANDA.pdf"
+                  target="_blank"
+                >
+                  <ion-icon name="person"></ion-icon>CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main title="content">
+        <div class="flex flex-col gap-4 contenido">
+          <div>
+            <h2 class="flex title-section">
+              <div id="education">Educación</div>
+              <div><ion-icon name="school" class="icon-title"></ion-icon></div>
+            </h2>
+            <div class="flex flex-col">
+              <h3 class="education-title">
+                <span id="campus">Desarrollo de Aplicaciones Web</span>
+                &#x2022; Campus FP
+              </h3>
+              <h4 class="subtitle-education">Sep 2022 - Jun 2024</h4>
+              <ul class="flex flex-col gap-3 mt-2">
+                <li id="web-1">
+                  &#x2022; Desarrolle mis conocimientos en el desarrollo web
+                  relacionandome con mis primeros lenguajes de programación como
+                  fueron Java, Python y PHP.
+                </li>
+                <li id="web-2">
+                  &#x2022; Aprendí a utilizar herramientas como Git, GitHub, y
+                  diseñar interfaces accesibles y flexibles con HTML5, SCSS y
+                  distintos FrameWorks de CSS3.
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col">
+              <h3 class="education-title">
+                <span id="bach">Bachillerato de Ciencias</span> &#x2022; IES
+                Maestro Matías Bravo
+              </h3>
+              <h4 class="subtitle-education">Sep 2020 - Jun 2022</h4>
+            </div>
+          </div>
+
+          <h2 class="flex title-section">
+            <div id="projects">Proyectos</div>
+            <div>
+              <ion-icon name="cube" class="icon-title"></ion-icon>
+            </div>
+          </h2>
+          <div class="flex flex-col gap-6 proyectos">
+            <div class="flex proyecto">
+              <div class="flex flex-col">
+                <div>
+                  <a
+                    href="https://hito1-poke-shop.vercel.app/"
+                    target="_blank"
+                    class="project-image project-image-dark"
+                  >
+                    <img
+                      src="./images/poke_dark.webp"
+                      alt="PokeShop Image"
+                      id="poke_image"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h1>hola</h1>
+              </div>
+            </div>
+            <div class="flex proyecto">
+              <div class="flex flex-col">
+                <div>
+                  <a
+                    href="https://hito1-dwec-martial.fly.dev/"
+                    target="_blank"
+                    class="project-image project-image-dark"
+                  >
+                    <img
+                      src="./images/dubo_dark.webp"
+                      alt="Dubo Martial Image"
+                      id="dubo_image"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h1>hola</h1>
+              </div>
+            </div>
+            <div class="flex proyecto">
+              <div class="flex flex-col">
+                <div>
+                  <a
+                    href="https://allam-dev.vercel.app/"
+                    target="_blank"
+                    class="project-image project-image-dark"
+                  >
+                    <img
+                      src="./images/allam_black.webp"
+                      alt="Portfolio Image"
+                      id="allam_image"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h1>hola</h1>
+              </div>
+            </div>
+            <div class="flex flex-wrap w-full more-projects">
+              <div class="more-caja">a</div>
+              <div class="more-caja">b</div>
+              <div class="more-caja">c</div>
+              <div class="more-caja">d</div>
+            </div>
+          </div>
+          <h2 class="flex title-section" id="contacto">
+            <div id="contact">Contacto</div>
+            <div>
+              <ion-icon name="chatbox-ellipses" class="icon-title"></ion-icon>
+            </div>
+          </h2>
+          <h2 class="flex title-section">
+            <div id="mail">Email</div>
+            <div><ion-icon name="mail" class="icon-title"></ion-icon></div>
+          </h2>
+        </div>
+      </main>
+    </div>
+
+    <script src="./dist/bundle.js" type="module"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
