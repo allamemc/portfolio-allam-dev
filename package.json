@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "nodemon index.js",
+    "dev": "webpack --watch & nodemon index.js",
+    "deploy": "flyctl deploy",
     "build": "webpack",
     "tail": "npx tailwindcss -i ./public/input.css -o ./public/css/output.css --watch"
   },
@@ -21,6 +23,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "i18next": "^23.7.6",
-    "i18next-browser-languagedetector": "^7.2.0"
+    "i18next-browser-languagedetector": "^7.2.0",
+    "nodemon": "^3.0.2"
   }
 }
