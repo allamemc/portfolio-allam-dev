@@ -2526,6 +2526,10 @@ html {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .w-full {
   width: 100%;
 }

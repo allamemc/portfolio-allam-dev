@@ -21,10 +21,10 @@ body {
 
 }
 #theme{
-    animation: salirDeArriba 1s ease-out;
+    animation: salirDeArriba 2s ease-out 2s;
 }
 #lang{
-    animation: salirDeDerecha 1s ease-out;
+    animation: salirDeDerecha 2s ease-out 2s;
 }
 .idioma{
     font-size: 18px;
@@ -158,7 +158,6 @@ body {
 }
 
   
-
 
 
 
