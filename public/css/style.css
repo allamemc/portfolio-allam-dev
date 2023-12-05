@@ -21,10 +21,10 @@ body {
 
 }
 #theme{
-    animation: salirDeArriba 2s ease-out 2s;
+    animation: salirDeArriba 2s ease-out ;
 }
 #lang{
-    animation: salirDeDerecha 2s ease-out 2s;
+    animation: salirDeDerecha 2s ease-out ;
 }
 .idioma{
     font-size: 18px;
