@@ -21,10 +21,10 @@ body {
 
 }
 #theme{
-    animation: salirDeArriba 2s ease-out ;
+    animation: salirDeArriba 1.5s ease-in-out ;
 }
 #lang{
-    animation: salirDeDerecha 2s ease-out ;
+    animation: salirDeDerecha 1.5s ease-in-out ;
 }
 .idioma{
     font-size: 18px;
@@ -147,19 +147,48 @@ body {
 
 .proyecto{
     gap: 15px;
+    max-width: 100%;
 }
 
-@media (max-width: 467px) {
+@media (max-width: 628px) {
     .proyecto{
         flex-direction: column;
     }
     .project-image img{
         max-width: 100%;
     }
+
 }
 
+.custom-button {
+    transition: transform 0.4s ease, 
+                box-shadow 0.4s ease; /* Añade una transición suave para la sombra */
+  }
   
-
+  .custom-button:hover { /* Hace el botón un poco más grande */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Cambia la sombra al hacer hover */
+  }
+  
+  .custom-button .icon {
+    transition: transform 0.4s ease; /* Añade una transición al icono */
+  }
+  
+  .custom-button:hover .icon {
+    transform: translateX(7px) rotate(40deg); /* Mueve el ícono a la derecha y lo gira */
+  }
+  
+  
+  .tecnologia{
+    transition: all 0.5s ease;
+  }
+    
+  .tecnologia:hover {
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+  }
+  .tecnologia.dark:hover {
+    filter: drop-shadow(0 2px 5px rgba(22, 22, 22, 0.7));
+  }
+    
 
 
 

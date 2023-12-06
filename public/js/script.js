@@ -1,17 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
   const themeButton = document.getElementById("theme");
-  const icono_tema = document.getElementById("theme-icon");
+  const icono_tema = document.getElementById("img-icono");
 
   themeButton.addEventListener("click", () => {
     var projectImages = document.querySelectorAll(".project-image");
+    var tecnologies = document.querySelectorAll(".tecnologia");
 
     if (document.documentElement.getAttribute("data-theme") == "halloween") {
       document.documentElement.setAttribute("data-theme", "lemonade");
-      icono_tema.setAttribute("name", "sunny");
+
+      icono_tema.src = "../svg/sunny.svg";
 
       projectImages.forEach((element) => {
         element.classList.remove("project-image-dark");
         element.classList.add("project-image-white");
+      });
+
+      tecnologies.forEach((element) => {
+        element.classList.add("dark");
       });
 
       document
@@ -25,11 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
         .setAttribute("src", "../images/allam_white.webp");
     } else {
       document.documentElement.setAttribute("data-theme", "halloween");
-      icono_tema.setAttribute("name", "moon");
+      icono_tema.src = "../svg/moon.svg";
 
       projectImages.forEach((element) => {
         element.classList.remove("project-image-white");
         element.classList.add("project-image-dark");
+      });
+
+      tecnologies.forEach((element) => {
+        element.classList.remove("dark");
       });
 
       document
@@ -45,17 +55,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// FILEPATH: /c:/Users/Campus FP/Downloads/portfolio-allam/public/js/script.js
+document.addEventListener("DOMContentLoaded", function () {
+  const enlaces = document.querySelectorAll("a");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("a");
+  enlaces.forEach(function (enlace) {
+    enlace.addEventListener("click", function (event) {
+      event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
 
-  links.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      setTimeout(() => {
-        window.location.href = link.href;
-      }, 250);
+      const url = enlace.href;
+      setTimeout(function () {
+        window.open(url, "_blank"); // Abrir enlace en una nueva pestaña después del retraso
+      }, 350); // 350 milisegundos de retraso
     });
   });
 });
