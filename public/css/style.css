@@ -241,11 +241,9 @@ body {
     bottom: 20px;
     right: 20px;
     font-size: 24px;
-
     padding: 10px;
     border-radius: 50%;
     text-decoration: none;
-    transition: opacity 0.3s;
     animation: explode 0.5s ease-in-out;
 }
 
@@ -253,9 +251,7 @@ body {
     display: block;
 }
 
-#scrollToTopBtn:hover {
-    opacity: 0.7;
-}
+
 
 @keyframes explode {
     0% {
