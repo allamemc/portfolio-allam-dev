@@ -18,6 +18,10 @@ langButton.addEventListener("click", () => {
   let portfolio = document.querySelector("#portfolio");
   let p_portfolio = document.querySelector("#p-portfolio");
   let p_solocr = document.querySelector("#p-solocr");
+  let p_logic = document.querySelector("#p-logic");
+  let python = document.querySelector("#python");
+  let p_python = document.querySelector("#p-python");
+  let p_teo = document.querySelector("#p-teo");
   let lang = idiomaText.textContent === "ES" ? "en" : "es";
   document.documentElement.setAttribute("lang", lang);
 
@@ -36,6 +40,10 @@ langButton.addEventListener("click", () => {
     { element: portfolio, key: "portfolio" },
     { element: p_portfolio, key: "p_portfolio" },
     { element: p_solocr, key: "p_solocr" },
+    { element: p_logic, key: "p_logic" },
+    { element: python, key: "python" },
+    { element: p_python, key: "p_python" },
+    { element: p_teo, key: "p_teo" },
   ];
 
   elements.forEach((item) => {
@@ -59,7 +67,7 @@ i18next.init({
         mail: "Email",
         campus: "Desarrollo de Aplicaciones Web",
         web_1:
-          "&#x2022; Desarrolle mis conocimientos en el desarrollo web relacionandome con mis primeros lenguajes de programación como fueron Java, Python y PHP.",
+          "&#x2022; Desarrollé mis conocimientos en el desarrollo web relacionandome con mis primeros lenguajes de programación como fueron Java, Python y PHP.",
         web_2:
           "&#x2022; Aprendí a utilizar herramientas como Git, GitHub, y diseñar interfaces accesibles y flexibles con HTML5, SCSS y distintos FrameWorks de CSS3.",
         bach: "Bachillerato de Ciencias",
@@ -70,6 +78,10 @@ i18next.init({
         p_portfolio:
           "Mi Portfolio Web, donde muestro mis proyectos y mi información.",
         p_solocr: "Tarifas para un gimnasio.",
+        p_logic: "Foro para programadores.",
+        python: "Tienda Python",
+        p_python: "Tienda de componentes en consola.",
+        p_teo: "Teoría sobre XML y JSON.",
       },
     },
     en: {
@@ -93,6 +105,10 @@ i18next.init({
         p_portfolio:
           "My Web Portfolio, where I show my projects and my information.",
         p_solocr: "Rates for a gym.",
+        p_logic: "Forum for programmers.",
+        python: "Python Store",
+        p_python: "Component store in console.",
+        p_teo: "Theory about XML and JSON.",
       },
     },
   },

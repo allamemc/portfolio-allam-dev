@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
     var projectImages = document.querySelectorAll(".project-image");
     var tecnologies = document.querySelectorAll(".tecnologia");
     var cajas_proyecto = document.querySelectorAll(".more-caja");
+    var social = document.querySelectorAll(".flex-item");
 
-    if (document.documentElement.getAttribute("data-theme") == "halloween") {
+    if (document.documentElement.getAttribute("data-theme") == "dark") {
       icono_tema.src = "../svg/sunny.svg";
-      document.documentElement.setAttribute("data-theme", "lemonade");
+      document.documentElement.setAttribute("data-theme", "autumn");
 
       projectImages.forEach((element) => {
         element.classList.remove("project-image-dark");
@@ -20,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
         element.classList.add("dark");
       });
       cajas_proyecto.forEach((element) => {
+        element.classList.add("white");
+      });
+      social.forEach((element) => {
         element.classList.add("white");
       });
 
@@ -34,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .setAttribute("src", "../images/allam_white.webp");
     } else {
       icono_tema.src = "../svg/moon.svg";
-      document.documentElement.setAttribute("data-theme", "halloween");
+      document.documentElement.setAttribute("data-theme", "dark");
 
       projectImages.forEach((element) => {
         element.classList.remove("project-image-white");
@@ -45,6 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         element.classList.remove("dark");
       });
       cajas_proyecto.forEach((element) => {
+        element.classList.remove("white");
+      });
+      social.forEach((element) => {
         element.classList.remove("white");
       });
 
@@ -97,3 +104,21 @@ document
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
   });
+
+const botonCopiar = document.querySelector(".copiar");
+const inputEmail = document.querySelector(".email-input");
+
+botonCopiar.addEventListener("click", function () {
+  const textoACopiar = inputEmail.value;
+
+  navigator.clipboard.writeText(textoACopiar);
+  if (document.documentElement.getAttribute("lang") == "es") {
+    this.innerHTML = "<ion-icon name='copy'></ion-icon> Copiado";
+  } else if (document.documentElement.getAttribute("lang") == "en") {
+    this.innerHTML = "<ion-icon name='copy'></ion-icon> Copied";
+  }
+
+  setTimeout(() => {
+    this.innerHTML = '<ion-icon name="copy"></ion-icon>';
+  }, 1000);
+});

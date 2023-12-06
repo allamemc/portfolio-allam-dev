@@ -237,9 +237,9 @@ body {
 
 #scrollToTopBtn {
     display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
     font-size: 24px;
     padding: 10px;
     border-radius: 50%;
@@ -263,6 +263,50 @@ body {
         opacity: 1;
     }
 }
+  
+/* Estilos para el flexbox */
+.flex-container {
+    display: flex;
+    width: 100%;
+
+    gap: 20px; /* Espacio entre las cajas */
+  }
+  
+  .flex-item {
+    width: calc(25% - 20px); /* 4 cajas en una fila */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 10px;
+    height: 100px; /* Altura de las cajas */
+    box-sizing: border-box; /* Considerar el borde y el relleno en el ancho */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease; /* Borde para visualizar los elementos */
+  }
+  .flex-item.white{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+    .flex-item.white:hover{
+        border: 2px solid rgba(0, 0, 0, 0.6);
+    }
+
+  .flex-item:hover{
+    border: 2px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Media query para pantallas más pequeñas que 628px */
+  @media (max-width: 628px) {
+    .flex-item {
+        width: calc(50%); /* 2 cajas en una fila */
+    }
+  }
+  
+  .email-input {
+    padding-left: 20px; /* Margen interno de 20px */
+    user-select: none; /* Evitar la selección */
+  }
   
   
 
