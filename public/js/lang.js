@@ -17,6 +17,7 @@ langButton.addEventListener("click", () => {
   let p_dubo = document.querySelector("#p-dubo");
   let portfolio = document.querySelector("#portfolio");
   let p_portfolio = document.querySelector("#p-portfolio");
+  let p_solocr = document.querySelector("#p-solocr");
   let lang = idiomaText.textContent === "ES" ? "en" : "es";
   document.documentElement.setAttribute("lang", lang);
 
@@ -34,6 +35,7 @@ langButton.addEventListener("click", () => {
     { element: p_dubo, key: "p_dubo" },
     { element: portfolio, key: "portfolio" },
     { element: p_portfolio, key: "p_portfolio" },
+    { element: p_solocr, key: "p_solocr" },
   ];
 
   elements.forEach((item) => {
@@ -67,6 +69,7 @@ i18next.init({
         portfolio: "Portafolio Web",
         p_portfolio:
           "Mi Portfolio Web, donde muestro mis proyectos y mi información.",
+        p_solocr: "Tarifas para un gimnasio.",
       },
     },
     en: {
@@ -89,6 +92,7 @@ i18next.init({
         portfolio: "Web Portfolio",
         p_portfolio:
           "My Web Portfolio, where I show my projects and my information.",
+        p_solocr: "Rates for a gym.",
       },
     },
   },

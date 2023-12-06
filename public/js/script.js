@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   themeButton.addEventListener("click", () => {
     var projectImages = document.querySelectorAll(".project-image");
     var tecnologies = document.querySelectorAll(".tecnologia");
+    var cajas_proyecto = document.querySelectorAll(".more-caja");
 
     if (document.documentElement.getAttribute("data-theme") == "halloween") {
       icono_tema.src = "../svg/sunny.svg";
@@ -17,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       tecnologies.forEach((element) => {
         element.classList.add("dark");
+      });
+      cajas_proyecto.forEach((element) => {
+        element.classList.add("white");
       });
 
       document
@@ -39,6 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       tecnologies.forEach((element) => {
         element.classList.remove("dark");
+      });
+      cajas_proyecto.forEach((element) => {
+        element.classList.remove("white");
       });
 
       document
@@ -68,3 +75,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Mostrar la flecha al llegar al tope de la página
+window.addEventListener("scroll", function () {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  var scrollHeight = document.documentElement.scrollHeight;
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  var clientHeight = document.documentElement.clientHeight;
+
+  if (scrollTop + clientHeight >= scrollHeight - 150) {
+    scrollToTopBtn.classList.add("show");
+  } else {
+    scrollToTopBtn.classList.remove("show");
+  }
+});
+
+// Hacer scroll hacia arriba al hacer clic en la flecha
+document
+  .getElementById("scrollToTopBtn")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  });
