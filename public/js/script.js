@@ -7,9 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     var tecnologies = document.querySelectorAll(".tecnologia");
 
     if (document.documentElement.getAttribute("data-theme") == "halloween") {
-      document.documentElement.setAttribute("data-theme", "lemonade");
-
       icono_tema.src = "../svg/sunny.svg";
+      document.documentElement.setAttribute("data-theme", "lemonade");
 
       projectImages.forEach((element) => {
         element.classList.remove("project-image-dark");
@@ -30,8 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .querySelector("#allam_image")
         .setAttribute("src", "../images/allam_white.webp");
     } else {
-      document.documentElement.setAttribute("data-theme", "halloween");
       icono_tema.src = "../svg/moon.svg";
+      document.documentElement.setAttribute("data-theme", "halloween");
 
       projectImages.forEach((element) => {
         element.classList.remove("project-image-white");

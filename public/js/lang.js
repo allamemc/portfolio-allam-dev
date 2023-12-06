@@ -13,6 +13,10 @@ langButton.addEventListener("click", () => {
   let web_1 = document.querySelector("#web-1");
   let web_2 = document.querySelector("#web-2");
   let bach = document.querySelector("#bach");
+  let p_pokeshop = document.querySelector("#p-pokeshop");
+  let p_dubo = document.querySelector("#p-dubo");
+  let portfolio = document.querySelector("#portfolio");
+  let p_portfolio = document.querySelector("#p-portfolio");
   let lang = idiomaText.textContent === "ES" ? "en" : "es";
   document.documentElement.setAttribute("lang", lang);
 
@@ -26,6 +30,10 @@ langButton.addEventListener("click", () => {
     { element: web_1, key: "web_1" },
     { element: web_2, key: "web_2" },
     { element: bach, key: "bach" },
+    { element: p_pokeshop, key: "p_pokeshop" },
+    { element: p_dubo, key: "p_dubo" },
+    { element: portfolio, key: "portfolio" },
+    { element: p_portfolio, key: "p_portfolio" },
   ];
 
   elements.forEach((item) => {
@@ -53,6 +61,12 @@ i18next.init({
         web_2:
           "&#x2022; Aprendí a utilizar herramientas como Git, GitHub, y diseñar interfaces accesibles y flexibles con HTML5, SCSS y distintos FrameWorks de CSS3.",
         bach: "Bachillerato de Ciencias",
+        p_pokeshop: "Tu tienda de Pokémon favorita, consumiendo la Poké API.",
+        p_dubo:
+          "Escuela de artes marciales, mejorada usando OAuth 2.0 y PassPort JS.",
+        portfolio: "Portafolio Web",
+        p_portfolio:
+          "Mi Portfolio Web, donde muestro mis proyectos y mi información.",
       },
     },
     en: {
@@ -69,6 +83,12 @@ i18next.init({
         web_2:
           "&#x2022; I learned to use tools like Git, GitHub, and design accessible and flexible interfaces with HTML5, SCSS and different CSS3 FrameWorks.",
         bach: "Bachelor of Science",
+        p_pokeshop: "Your favorite Pokemon store, consuming the Poké API.",
+        p_dubo:
+          "Martial arts school, enhanced using OAuth 2.0 and PassPort JS.",
+        portfolio: "Web Portfolio",
+        p_portfolio:
+          "My Web Portfolio, where I show my projects and my information.",
       },
     },
   },

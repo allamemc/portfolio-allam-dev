@@ -36,9 +36,8 @@ body {
     justify-content: center;
 }
 .hero{
-   
-    border-bottom: 2px;
-    padding-bottom: 40px;
+
+    padding-bottom: 20px;
 }
 
 
@@ -153,6 +152,7 @@ body {
 @media (max-width: 628px) {
     .proyecto{
         flex-direction: column;
+        gap: 0px;
     }
     .project-image img{
         max-width: 100%;
@@ -191,6 +191,33 @@ body {
     
 
 
+  .more-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cajas */
+    padding-bottom: 20px;
+  }
+  
+  .more-caja {
+    width: calc(50% - 20px); /* Dos columnas en una fila en pantallas grandes con espaciado */
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
 
+  .more-caja:hover{
+    border: 2px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  /* Media query para pantallas más pequeñas que 628px */
+  @media (max-width: 628px) {
+    .more-caja {
+      width: calc(100%); /* Una columna en pantallas más pequeñas con espaciado */
+    }
+  }
+  
+  
 
 
