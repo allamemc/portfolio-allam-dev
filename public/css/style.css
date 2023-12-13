@@ -9,6 +9,26 @@
 html {
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1D232A; 
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7480FF; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #626cd7; 
+  }
 body {
     font-family: 'Satoshi', sans-serif;
     
