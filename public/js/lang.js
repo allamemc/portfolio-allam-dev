@@ -46,7 +46,7 @@ langButton.addEventListener('click', () => {
 		{ element: p_teo, key: 'p_teo' },
 	];
 
-	elements.forEach(item => {
+	elements.forEach((item) => {
 		item.element.innerHTML = i18next.t(item.key, { lng: lang });
 	});
 
@@ -69,7 +69,7 @@ i18next.init({
 				web_1:
 					'&#x2022; Desarrollé mis conocimientos en el desarrollo web relacionandome con mis primeros lenguajes de programación como fueron Java, Python, PHP y JavaScript.',
 				web_2:
-					'&#x2022; Aprendí a utilizar herramientas como Git, GitHub, y diseñar interfaces accesibles y flexibles con HTML5, SCSS y distintos FrameWorks de CSS3.',
+					'&#x2022; Aprendí a utilizar herramientas como Git, GitHub, y diseñar interfaces accesibles con HTML5, SCSS, TailWind CSS y Bootstrap.',
 				bach: 'Higher National Diploma in Computing',
 				p_pokeshop: 'Tu tienda de Pokémon favorita, consumiendo la Poké API.',
 				p_dubo:
@@ -96,7 +96,7 @@ i18next.init({
 				web_1:
 					'&#x2022; Develop my knowledge in web development relating to my first programming languages ​​like Java, Python, PHP and JavaScript.',
 				web_2:
-					'&#x2022; I learned to use tools like Git, GitHub, and design accessible and flexible interfaces with HTML5, SCSS and different CSS3 FrameWorks.',
+					'&#x2022; I learned to use tools like Git, GitHub, and design accessible and flexible interfaces with HTML5, SCSS, TailWind CSS and Bootstrap.',
 				bach: 'Higher National Diploma in Computing',
 				p_pokeshop: 'Your favorite Pokemon store, consuming the Poké API.',
 				p_dubo:
