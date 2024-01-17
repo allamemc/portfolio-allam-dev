@@ -67,17 +67,17 @@ i18next.init({
 				mail: 'Email',
 				campus: 'Desarrollo de Aplicaciones Web',
 				web_1:
-					'&#x2022; Desarrollé mis conocimientos en el desarrollo web relacionandome con mis primeros lenguajes de programación como fueron Java, Python, PHP y JavaScript.',
+					'&#x2022; Desarrollé mis conocimientos en el desarrollo web relacionándome con mis primeros lenguajes de programación como fueron Java, Python, PHP y JavaScript.',
 				web_2:
 					'&#x2022; Aprendí a utilizar herramientas como Git, GitHub, y diseñar interfaces accesibles con HTML5, SCSS, TailWind CSS y Bootstrap.',
 				bach: 'Higher National Diploma in Computing',
 				p_pokeshop: 'Tu tienda de Pokémon favorita, consumiendo la Poké API.',
 				p_dubo:
-					'Escuela de artes marciales, mejorada usando OAuth 2.0 y PassPort JS.',
+					'Escuela de artes marciales, mejorada usando OAuth 2.0 y Passport JS.',
 				portfolio: 'Portafolio Web',
 				p_portfolio:
 					'Mi Portfolio Web, donde muestro mis proyectos y mi información.',
-				p_solocr: 'Tarifas para un gimnasio.',
+				p_solocr: 'Tarifas de un gimnasio.',
 				p_logic: 'Foro para programadores.',
 				python: 'Tienda Python',
 				p_python: 'Tienda de componentes en consola.',
@@ -100,7 +100,7 @@ i18next.init({
 				bach: 'Higher National Diploma in Computing',
 				p_pokeshop: 'Your favorite Pokemon store, consuming the Poké API.',
 				p_dubo:
-					'Martial arts school, enhanced using OAuth 2.0 and PassPort JS.',
+					'Martial arts school, enhanced using OAuth 2.0 and Passport JS.',
 				portfolio: 'Web Portfolio',
 				p_portfolio:
 					'My Web Portfolio, where I show my projects and my information.',
