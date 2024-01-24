@@ -55,7 +55,7 @@ langButton.addEventListener('click', () => {
 
 i18next.init({
 	lng: 'es',
-	debug: true,
+	debug: false,
 	resources: {
 		es: {
 			translation: {
