@@ -19,12 +19,12 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #7480ff;
+	background: #ff865b;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #626cd7;
+	background: #ff765e;
 }
 body {
 	font-family: 'Satoshi', sans-serif;

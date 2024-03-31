@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		var cajas_proyecto = document.querySelectorAll('.more-caja')
 		var social = document.querySelectorAll('.flex-item')
 
-		if (document.documentElement.getAttribute('data-theme') == 'dark') {
+		if (document.documentElement.getAttribute('data-theme') == 'sunset') {
 			icono_tema.src = '../svg/sunny.svg'
 			document.documentElement.setAttribute('data-theme', 'autumn')
 			document.styleSheets[0].addRule(
@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
 				.setAttribute('src', '../images/dubo_white.webp')
 			document
 				.querySelector('#allam_image')
-				.setAttribute('src', '../images/allam_white.webp')
+				.setAttribute('src', '../images/note_white.webp')
 		} else {
 			icono_tema.src = '../svg/moon.svg'
-			document.documentElement.setAttribute('data-theme', 'dark')
+			document.documentElement.setAttribute('data-theme', 'sunset')
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-thumb',
-				`background-color: #7480FF !important`
+				`background-color: #FF865B !important`
 			)
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-track',
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			)
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-thumb:hover',
-				`background-color: #626cd7 !important`
+				`background-color: #FF765E !important`
 			)
 			projectImages.forEach((element) => {
 				element.classList.remove('project-image-white')
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				.setAttribute('src', '../images/dubo_dark.webp')
 			document
 				.querySelector('#allam_image')
-				.setAttribute('src', '../images/allam_black.webp')
+				.setAttribute('src', '../images/note_dark.webp')
 		}
 	})
 })
