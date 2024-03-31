@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		var tecnologies = document.querySelectorAll('.tecnologia')
 		var cajas_proyecto = document.querySelectorAll('.more-caja')
 		var social = document.querySelectorAll('.flex-item')
+		var imgProfile = document.querySelector('.profile-pic')
 
 		if (document.documentElement.getAttribute('data-theme') == 'sunset') {
 			icono_tema.src = '../svg/sunny.svg'
+			imgProfile.classList.add('profile-pic-dark')
 			document.documentElement.setAttribute('data-theme', 'autumn')
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-thumb',
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				.setAttribute('src', '../images/note_white.webp')
 		} else {
 			icono_tema.src = '../svg/moon.svg'
+			imgProfile.classList.remove('profile-pic-dark')
 			document.documentElement.setAttribute('data-theme', 'sunset')
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-thumb',
