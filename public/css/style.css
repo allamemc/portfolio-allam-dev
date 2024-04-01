@@ -29,6 +29,10 @@ html {
 	background: #ff765e;
 }
 
+html {
+	zoom: 110%;
+}
+
 body {
 	font-family: 'Satoshi', sans-serif;
 }
@@ -289,7 +293,7 @@ body {
 .flex-container {
 	display: flex;
 	width: 100%;
-
+	justify-content: center;
 	gap: 20px; /* Espacio entre las cajas */
 }
 

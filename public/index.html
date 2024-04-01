@@ -88,10 +88,10 @@
 								class="border-solid profile-pic black border-base bg-base-300"></div>
 						</div>
 						<div class="flex flex-col justify-center gap-3">
-							<h1
-								class="text-4xl titulo-nombre max-sm:text-center typing-animation">
+							<div
+								class="text-4xl text-transparent titulo-nombre max-sm:text-center bg-gradient-to-r from-primary to-secondary bg-clip-text">
 								Allam Miranda Carrasco
-							</h1>
+							</div>
 							<div class="max-sm:text-center subtitulo">
 								Desarrollador
 								<span class="font-bold text-primary hover-bold"
@@ -115,16 +115,19 @@
 			</section>
 			<div class="divider"></div>
 			<main>
-				<div class="flex flex-col gap-4 mt-12 contenido">
+				<div class="flex flex-col gap-4 mt-5 contenido">
 					<div>
-						<h2 class="flex title-section">
-							<div id="education">Educación</div>
-							<div>
-								<ion-icon
-									name="school"
-									class="icon-title text-primary"></ion-icon>
+						<div class="flex flex-col gap-0 mb-10 title-section">
+							<div
+								id="education"
+								class="inline-block gap-0 p-2 m-auto text-4xl text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+								Educación
 							</div>
-						</h2>
+							<div class="m-auto text-2xl text-center title-parra" id="edu-p">
+								Formando mi camino profesional
+							</div>
+						</div>
+
 						<div class="flex flex-col">
 							<h3 class="education-title">
 								<span id="campus"
@@ -158,13 +161,17 @@
 							</ul>
 						</div>
 					</div>
-
-					<h2 class="flex mt-12 title-section">
-						<div id="projects">Proyectos</div>
-						<div>
-							<ion-icon name="cube" class="icon-title text-primary"></ion-icon>
+					<div class="flex flex-col gap-0 mt-12 mb-12 title-section">
+						<div
+							id="projects"
+							class="inline-block gap-0 p-2 m-auto text-4xl text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+							Proyectos
 						</div>
-					</h2>
+						<div class="m-auto text-2xl text-center title-parra" id="pro-p">
+							Mi creatividad en acción
+						</div>
+					</div>
+
 					<div class="flex flex-col gap-6 proyectos">
 						<div class="flex proyecto">
 							<div class="flex flex-col">
@@ -1047,15 +1054,18 @@
 						</div>
 					</div>
 
-					<h2 class="flex mt-12 title-section" id="contacto">
-						<div id="contact">Contacto</div>
-						<div>
-							<ion-icon
-								name="chatbox-ellipses"
-								class="icon-title text-primary"></ion-icon>
+					<div class="flex flex-col gap-0 mt-12 mb-5 title-section">
+						<div
+							id="contact"
+							class="inline-block gap-0 p-2 m-auto text-4xl text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text">
+							Contacto
 						</div>
-					</h2>
-					<div class="flex-container">
+						<div class="m-auto text-2xl text-center title-parra" id="con-p">
+							Hablemos sobre tu idea
+						</div>
+					</div>
+
+					<div class="mb-5 flex-container">
 						<a
 							href="https://www.linkedin.com/in/allam-miranda-carrasco/"
 							class="flex-item"
@@ -1070,12 +1080,6 @@
 						</a>
 					</div>
 
-					<h2 class="flex title-section">
-						<div id="mail">Email</div>
-						<div>
-							<ion-icon name="mail" class="icon-title text-primary"></ion-icon>
-						</div>
-					</h2>
 					<div class="flex gap-3 mb-12">
 						<input
 							type="text"

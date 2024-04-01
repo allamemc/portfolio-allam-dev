@@ -6,8 +6,11 @@ const idiomaText = document.querySelector('.idioma')
 langButton.addEventListener('click', () => {
 	let subtitulo = document.querySelector('.subtitulo')
 	let education = document.querySelector('#education')
+	let edu_p = document.querySelector('#edu-p')
 	let projects = document.querySelector('#projects')
+	let pro_p = document.querySelector('#pro-p')
 	let contact = document.querySelector('#contact')
+	let con_p = document.querySelector('#con-p')
 	let mail = document.querySelector('#mail')
 	let campus = document.querySelector('#campus')
 	let web_1 = document.querySelector('#web-1')
@@ -27,8 +30,11 @@ langButton.addEventListener('click', () => {
 	const elements = [
 		{ element: subtitulo, key: 'subtitulo' },
 		{ element: education, key: 'education' },
+		{ element: edu_p, key: 'edu_p' },
 		{ element: projects, key: 'projects' },
+		{ element: pro_p, key: 'pro_p' },
 		{ element: contact, key: 'contact' },
+		{ element: con_p, key: 'con_p' },
 		{ element: mail, key: 'mail' },
 		{ element: campus, key: 'campus' },
 		{ element: web_1, key: 'web_1' },
@@ -62,8 +68,11 @@ i18next.init({
 				subtitulo:
 					"Desarrollador <span class='font-bold text-primary'>Full-Stack</span> que disfruta el proceso de aprendizaje y la creación de aplicaciones.",
 				education: 'Educación',
+				edu_p: 'Formando mi camino profesional',
 				projects: 'Proyectos',
+				pro_p: 'Mi creatividad en acción',
 				contact: 'Contacto',
+				con_p: 'Hablemos sobre tu idea',
 				mail: 'Email',
 				campus: 'Desarrollo de Aplicaciones Web',
 				web_1:
@@ -88,8 +97,11 @@ i18next.init({
 				subtitulo:
 					"Full-Stack <span class='font-bold text-primary'>Developer</span> who enjoys the learning process and creating applications.",
 				education: 'Education',
+				edu_p: 'Shaping my professional path',
 				projects: 'Projects',
+				pro_p: 'My creativity in action',
 				contact: 'Contact',
+				con_p: 'Let’s talk about your idea',
 				mail: 'Email',
 				campus: 'Web Applications Development',
 				web_1:
