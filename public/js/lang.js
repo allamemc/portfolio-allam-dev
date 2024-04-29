@@ -3,6 +3,64 @@ import i18next from 'i18next'
 const langButton = document.getElementById('lang')
 const idiomaText = document.querySelector('.idioma')
 
+// on document load set language to english
+
+document.addEventListener('DOMContentLoaded', () => {
+	let subtitulo = document.querySelector('.subtitulo')
+	let education = document.querySelector('#education')
+	let edu_p = document.querySelector('#edu-p')
+	let projects = document.querySelector('#projects')
+	let pro_p = document.querySelector('#pro-p')
+	let contact = document.querySelector('#contact')
+	let con_p = document.querySelector('#con-p')
+	let mail = document.querySelector('#mail')
+	let campus = document.querySelector('#campus')
+	let web_1 = document.querySelector('#web-1')
+	let web_2 = document.querySelector('#web-2')
+	let p_pokeshop = document.querySelector('#p-pokeshop')
+	let p_dubo = document.querySelector('#p-dubo')
+	let portfolio = document.querySelector('#portfolio')
+	let p_portfolio = document.querySelector('#p-portfolio')
+	let p_solocr = document.querySelector('#p-solocr')
+	let p_logic = document.querySelector('#p-logic')
+	let python = document.querySelector('#python')
+	let p_python = document.querySelector('#p-python')
+	let p_teo = document.querySelector('#p-teo')
+	let lang = 'en'
+	document.documentElement.setAttribute('lang', lang)
+
+	const elements = [
+		{ element: subtitulo, key: 'subtitulo' },
+		{ element: education, key: 'education' },
+		{ element: edu_p, key: 'edu_p' },
+		{ element: projects, key: 'projects' },
+		{ element: pro_p, key: 'pro_p' },
+		{ element: contact, key: 'contact' },
+		{ element: con_p, key: 'con_p' },
+		{ element: mail, key: 'mail' },
+		{ element: campus, key: 'campus' },
+		{ element: web_1, key: 'web_1' },
+		{ element: web_2, key: 'web_2' },
+		{ element: p_pokeshop, key: 'p_pokeshop' },
+		{ element: p_dubo, key: 'p_dubo' },
+		{ element: portfolio, key: 'portfolio' },
+		{ element: p_portfolio, key: 'p_portfolio' },
+		{ element: p_solocr, key: 'p_solocr' },
+		{ element: p_logic, key: 'p_logic' },
+		{ element: python, key: 'python' },
+		{ element: p_python, key: 'p_python' },
+		{ element: p_teo, key: 'p_teo' },
+	]
+
+	elements.forEach((item) => {
+		if (item.element) {
+			item.element.innerHTML = i18next.t(item.key, { lng: lang })
+		}
+	})
+
+	idiomaText.textContent = lang === 'es' ? 'ES' : 'EN'
+})
+
 langButton.addEventListener('click', () => {
 	let subtitulo = document.querySelector('.subtitulo')
 	let education = document.querySelector('#education')
@@ -74,7 +132,7 @@ i18next.init({
 				contact: 'Contacto',
 				con_p: 'Hablemos sobre tu idea',
 				mail: 'Email',
-				campus: 'Desarrollo de Aplicaciones Web',
+				campus: 'Desarrollo de Aplicaciones Web &#8212; HND in Computing',
 				web_1:
 					'&#x2022; He fortalecido mis habilidades en el desarrollo web, centrándome en <span class="font-bold text-primary">React</span> para el frontend, <span class="font-bold text-primary">Node.js</span> para el backend, y <span class="font-bold text-primary">Spring</span> para la construcción de aplicaciones robustas en <span class="font-bold text-primary">Java</span>.',
 				web_2:
@@ -103,7 +161,7 @@ i18next.init({
 				contact: 'Contact',
 				con_p: 'Let’s talk about your idea',
 				mail: 'Email',
-				campus: 'Web Applications Development',
+				campus: 'Web Applications Development &#8212; HND in Computing',
 				web_1:
 					'&#x2022; I have strengthened my skills in web development, focusing on <span class="font-bold text-primary">React</span> for the frontend, <span class="font-bold text-primary">Node.js</span> for the backend, and <span class="font-bold text-primary">Spring</span> for building robust applications in <span class="font-bold text-primary">Java</span>.',
 				web_2:
