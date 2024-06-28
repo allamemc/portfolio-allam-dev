@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		var social = document.querySelectorAll('.flex-item')
 		var imgProfile = document.querySelector('.profile-pic')
 
-		if (document.documentElement.getAttribute('data-theme') == 'sunset') {
+		if (document.documentElement.getAttribute('data-theme') == 'dark') {
 			icono_tema.src = '../svg/sunny.svg'
 			imgProfile.classList.add('profile-pic-dark')
-			document.documentElement.setAttribute('data-theme', 'autumn')
+			document.documentElement.setAttribute('data-theme', 'emerald')
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-thumb',
-				`background-color: #790220 !important`
+				`background-color: #AAD178 !important`
 			)
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-track',
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			)
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-thumb:hover',
-				`background-color: #430111 !important`
+				`background-color: #64CA8D !important`
 			)
 			projectImages.forEach((element) => {
 				element.classList.remove('project-image-dark')
@@ -52,18 +52,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		} else {
 			icono_tema.src = '../svg/moon.svg'
 			imgProfile.classList.remove('profile-pic-dark')
-			document.documentElement.setAttribute('data-theme', 'sunset')
+			document.documentElement.setAttribute('data-theme', 'dark')
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-thumb',
-				`background-color: #FF865B !important`
+				`background-color: #817FFF !important`
 			)
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-track',
-				`background-color: #1D232A !important`
+				`background-color: #1D232B !important`
 			)
 			document.styleSheets[0].addRule(
 				'::-webkit-scrollbar-thumb:hover',
-				`background-color: #FF765E !important`
+				`background-color: #3F3782 !important`
 			)
 			projectImages.forEach((element) => {
 				element.classList.remove('project-image-white')
